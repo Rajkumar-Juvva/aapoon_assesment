@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-w241%ylsdxbbpn$h177j1eks@@lzo_)co+x+38jw(r(pahw-r0'
+SECRET_KEY = 'xxxxxxx-secret-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'TeacherDirectory.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'temparory_db',
-        'USERNAME' : 'postgres',
+        'NAME': 'database_name',
+        'USERNAME' : 'username',
         'HOST':'localhost',
         'PORT' : '5432'
     }
