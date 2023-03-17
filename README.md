@@ -1,5 +1,5 @@
 # aapoon_assesment
-Two programming questions were given
+Two programming questions and one django project were given
 1. apartment_hunting.py
 2. calendar_matching.py
 We can directly run those files
