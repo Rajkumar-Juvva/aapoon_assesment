@@ -1,0 +1,71 @@
+<html>
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+      margin: auto;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+
+</head>
+<body>
+ <br>
+    <table>
+      <tr>
+        <td colspan="2">Teacher Data</td>
+      </tr>
+      <tr>
+        {% load static %}
+        {% static 'teachers' as base_url %}
+        
+        <td>Profile Picture</td>
+        <td><img src="/static/teachers/{{data.0.profile_picture}}"  alt="Image not found" onerror="this.onerror=null; this.src='/static/teachers/dummy.jpg'" height="100px" width="100px"></td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td>{{data.0.first_name}}</td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>{{data.0.second_name}}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{data.0.email_address}}</td>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td>{{data.0.phone_number}}</td>
+      </tr>
+      <tr>
+        <td>Room Number</td>
+        <td>{{data.0.room_number}}</td>
+      </tr>
+      <tr>
+        <td>Subjects Taught</td>
+        <td>{{data.0.subjects_taught}}</td>
+      </tr>
+
+    </table>
+
+
+</body>
+<script>
+  function addImageSrc(name){
+
+  }
+</script>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+
+
+</head>
+<body>
+    <form action="" method = "POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        <label for="file_input">Upload your file</label>
+        <input name = 'file' type="file" id="file_input" required>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{message|safe}}</p>
+
+
+</body>
+
+
+</html>

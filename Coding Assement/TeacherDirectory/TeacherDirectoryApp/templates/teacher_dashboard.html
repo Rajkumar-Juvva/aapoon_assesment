@@ -1,0 +1,46 @@
+<html>
+<head>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Full Name</th>
+            <th>Email Addess</th>
+            <th>Pofile Link</th>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            {% if i.first_name%}
+            <tr>
+                <td>{{i.first_name}} {{i.second_name}}</td>
+                <td>{{i.email_address}}</td>
+                <td><a href="/details/{{i.id}}">Open Profile</a></td>
+            </tr>
+            {% endif %}
+            {% endfor%}
+        </tbody>
+    </table>
+
+
+</body>
+
+
+</html>

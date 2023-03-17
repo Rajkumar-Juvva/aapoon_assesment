@@ -1,0 +1,134 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red26\green26\blue26;
+}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c13333\c13333\c13333;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh19380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Question no 1: Apartment Hunting\
+\
+Description: 
+\f1\fs22 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2   You're looking to move into a new apartment on specific street, and you're\
+  given a list of contiguous blocks on that street where each block contains an\
+  apartment that you could move into.\
+\
+  You also have a list of requirements: a list of buildings that are important\
+  to you. For instance, you might value having a school and a gym near your\
+  apartment. The list of blocks that you have contains information at every\
+  block about all of the buildings that are present and absent at the block in\
+  question. For instance, for every block, you might know whether a school, a\
+  pool, an office, and a gym are present.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+  In order to optimize your life, you want to pick an apartment block such that\
+  you minimize the farthest distance you'd have to walk from your apartment to\
+  reach any of your required buildings.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+  Write a function that takes in a list of contiguous blocks on a specific\
+  street and a list of your required buildings and that returns the location\
+  (the index) of the block that's most optimal for you.\
+\
+  If there are multiple most optimal blocks, your function can return the index\
+  of any one of them.\
+\
+Sample Input:\
+\
+blocks =  = [\
+\pard\pardeftab720\partightenfactor0
+\cf2   \{\
+    "gym": false,\
+    "school": true,\
+    "store": false,\
+  \},\
+  \{\
+    "gym": true,\
+    "school": false,\
+    "store": false,\
+  \},\
+  \{\
+    "gym": true,\
+    "school": true,\
+    "store": false,\
+  \},\
+  \{\
+    "gym": false,\
+    "school": true,\
+    "store": false,\
+  \},\
+  \{\
+    "gym": false,\
+    "school": true,\
+    "store": true,\
+  \},\
+]\
+\
+Sample Output: 3 // at index 3, the farthest you'd have to walk to reach a gym, a school, or a store is 1 block; at any other index, you'd have to walk farther\
+\
+\
+\
+Question no 2: Calendar Matching\
+\
+Description: \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+  Imagine that you want to schedule a meeting of a certain duration with a\
+  co-worker. You have access to your calendar and your co-worker's calendar\
+  (both of which contain your respective meetings for the day, in the form of\
+  [startTime, endTime]), as well as both of your daily bounds [earliestTime, latestTime])\
+\
+\
+  Write a function that takes in your calendar, your daily bounds, your\
+  co-worker's calendar, your co-worker's daily bounds, and the duration of the\
+  meeting that you want to schedule, and that returns a list of all the time\
+  blocks (in the form of [startTime, endTime] during which you\
+  could schedule the meeting, ordered from earliest time block to latest.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+  Note that times will be given and should be returned in military time. For\
+  example: 8:30, 9:01 and 23:56\
+\
+  Also note that the given calendar times will be sorted by start time in\
+  ascending order, as you would expect them to appear in a calendar application\
+  like Google Calendar.\
+\
+Sample Input:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+calendar1 = [['9:00', '10:30'], ['12:00', '13:00'], ['16:00', '18:00']]\
+dailyBounds1 = ['9:00', '20:00']\
+\pard\pardeftab720\partightenfactor0
+\cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 calendar2\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  = [['10:00', '11:30'], ['12:30', '14:30'], ['14:30', '15:00'], ['16:00', '17:00']]\
+\cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 dailyBounds2\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  = ['10:00', '18:30']\
+\cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 meetingDuration\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  = 30\
+\
+Sample Output: [['11:30', '12:00'], ['15:00', '16:00'], ['18:00', '18:30']]\
+\
+\
+Question 3: Django API.\
+\
+Description: Please look into the 
+\f2\b Tech Test Folder
+\f1\b0  for this.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\
+\
+}
