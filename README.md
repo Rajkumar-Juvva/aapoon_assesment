@@ -1,8 +1,11 @@
 # aapoon_assesment
 Two programming questions were given
+1. apartment_hunting.py
+2. calendar_matching.py
 We can directly run those files
 
 Comming to django project
+    Project Name  - TeacherDirectory
     http://127.0.0.1:8000/file_upload/
         This page to upload a bulk data of teachers
     http://127.0.0.1:8000/dashboard/
